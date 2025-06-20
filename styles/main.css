@@ -1,0 +1,256 @@
+.about {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.imades__list {
+    flex-wrap: wrap; /*Если карточки не влезут в строку, то перенос на новую*/
+    justify-content: center; /* распределяем элементы по центру*/ 
+    list-style-type: none; /*убираем маркеры от списка ul*/
+    padding: 0; /*ставим в 0 пикселей внутренние отступы*/
+
+    width: 1350px; /*задаем ширину слайдера с карточками */
+    margin-top: 60px; /*отступ сверху*/
+    display: flex; /* Используем flexbox для выравнивания карточек в строку*/
+    gap: 40px; /* промежуток между карточками */
+    overflow: hidden;/* если содержимое выходит за пределы карточки, то скрытие лишнего */
+    list-style: none;
+}
+
+.pictures__image {
+    min-width: 300px; /*устанавливаем минимальную ширину для каждого изображения*/
+    height: 350px;
+
+}
+.pictures__image-button{
+    width: 60px; /*устанавливаем минимальную ширину для каждого изображения*/
+    height: 40px;
+
+}
+.images__item {
+    width: 360px; /*устанавливаем ширину для каждого элемента*/
+    margin-top: 20px;
+    margin-bottom: auto;
+    margin-left: 30px;
+    transition: 0.3s ease; /* плавное изменение отображения длительностью 0.3 секунды */
+    transition: transform 0.3s;
+   }  
+.imades__item:hover {
+    transform: scale(1.03);
+     box-shadow: 0 8px 16px 0
+   rgba(0,0,0,0.2);
+}
+.pictures__subtitle,.pictures__author  {
+    margin-top: 20px; /*отступ сверху*/
+    margin-bottom: 20px;
+    margin-left: 10px;  
+}
+
+.pictures__link {
+    border: none; /* убираем рамку у кнопки*/
+    margin-top: 20px; /*отступ сверху*/
+    margin-bottom: 20px;
+    margin-left: 10px;
+    color: #0c0b0b; /*цвет текста*/
+    cursor: pointer; /* курсор меняем на указатель */
+    transition: transform 0.3s;
+}
+
+.about__wrap-right {
+    max-width: 900px;
+    flex-shrink: 0;
+}
+
+.promo {
+    padding: 0 50px;
+}
+
+.promo__item {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    border: 1px solid #000;
+    margin: 20px 0;
+
+}
+
+.promo__wrapper {
+    max-width: 900px;
+    padding-inline: 20px;
+
+}
+
+.section__title {
+    text-align: center;
+}
+
+.promo__link {
+    font-size: 24px;
+    color: #5e0606;
+    text-decoration: none;
+    text-align: center;
+}
+.promo__link:hover{
+    opacity: 0.3;
+}
+.reviews__list {
+    list-style: none;
+    padding-right: 20px;
+}
+
+.reviews__icon {
+    padding: 16px;
+    margin: auto;
+    float: left;
+    
+}
+.reviews__score{
+
+    position: relative;
+    height: 17px;
+
+}
+.reviews__score-item {
+    position: absolute;
+    z-index: 2;
+    display: inline-block;
+    background-image: url(../images/score.webp);
+    height: 17px;
+    width: 20px;
+    background-size: 128px;
+    background-position: 0 -136px;
+}
+
+.reviews__score-mask {
+    z-index: 1;
+    width: 85px;
+    background-position: 0 -118px;
+}
+.reviews__score-item--five{
+    width: 86px;
+}
+.popup__form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+}
+.promo__item {
+    transition: transform 0.3s;
+}
+.promo__item:hover {
+    transform: scale(1.03);
+}
+.promo__item {
+    transition: box-shadow 0.3s;
+}
+.promo__item:hover {
+    box-shadow: 0 8px 16px 0
+   rgba(0,0,0,0.2);
+}
+.button{
+    padding-right: 25px;
+}
+.window, .dialog{
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%;
+    height: 100%;
+    background-color: rgba(58, 60, 65, 0.7); 
+}
+.popup__login, .popup__reg{
+    position: absolute; 
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 800px;
+    width: 100%;
+    padding: 50px 20px; 
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+    column-gap: 64px; 
+    background-color: #f3f3f3; 
+    color: #000000; 
+}
+.popup__end, .popup__close{
+    position: absolute; /* позиционируется абсолютно*/
+    top: 0; /* Элемент будет находиться на верхней границе родителя*/
+    right: 0; /* элемент будет прижат к правой стороне родителя */
+    padding: 10px; /* Внутренние отступы с каждой стороны 10px*/
+    background-color: #ff0000; /*фон кнопки*/
+    color: #000000;
+    border: none;
+
+}
+.popup__close:hover,.popup__end:hover {
+    opacity: 0.3;
+}
+.modal__content, .modal__hews{
+    display: flex;
+}
+.modal__hews{
+    width: 1000px;
+    border: 1px solid #000;
+    display: none;
+    position: absolute; 
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f3f3f3; 
+}
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide image {
+    display: block;
+    width: 200;
+    height: 350;
+    object-fit: cover;
+  }
+  .images__list {
+    display: flex; /* Используем flexbox для выравнивания карточек в строку*/
+  
+  flex-wrap: wrap; /*Если карточки не влезут в строку, то перенос на новую*/
+
+    gap: 50px; /* промежуток между карточками */
+    justify-content: center; /* распределяем элементы по центру*/ 
+    list-style-type: none; /*убираем маркеры от списка ul*/
+    margin: 0; /*ставим в 0 пикселей внешние отступы*/
+    padding: 0; /*ставим в 0 пикселей внутренние отступы*/
+
+}
+.images__item {
+    padding: 10px 30px;  /* Внутренние отступы: 10px сверху и снизу, 30px слева и справа */
+     border-radius: 20px; /* скругление углов на 20px*/
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);/*тень карточки*/
+}
+
+.swipper__section{
+    position: relative;
+}

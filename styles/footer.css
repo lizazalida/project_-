@@ -1,0 +1,22 @@
+.footer__container{
+    max-width: 900px;
+    display: flex;
+    flex-direction: row;
+    row-gap: 10px;
+    align-items: center;
+    list-style-type: none;
+    margin: 30px;
+    margin-left: 50px;
+   }
+   .footer__copy{
+    padding-left: 5%;
+ 
+   }
+   .footer__list{
+    list-style: none;
+   }
+   .footer__item-link{
+    text-decoration: none;
+    color: #000;
+    padding-left: 10%;
+   }

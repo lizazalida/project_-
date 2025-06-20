@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>КАРртинная галерея современного искусства</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<!-- Заголовок -->
+
+<body>
+    <div class="preloader">
+        <div class="loader">
+            <span class="dot1"></span>
+            <span class="dot2"></span>
+            <span class="dot3"></span>
+        </div>
+        Загрузка...
+    </div> 
+    <div class="content"> 
+        
+        <header class="header container">
+            <a class="header__link">
+                <img class="header__img" src="images/head.webp" alt="Логотип" width="70" height="70">
+                <h1 class="header__title">КАРртинная галерея современного искусства</h1>
+            </a>
+            <nav class="header__menu">
+                <ul class="header__list">
+                    <!-- <li class="header__item"><a class="header__item-link" href="#">ТОП КАРртин</a></li>
+                    <li class="header__item"><a class="header__item-link" href="#">Покупка билетов</a></li> -->
+                </ul>
+            </nav>
+            <!--/ Навигация -->
+            <div class="header__button ">
+                <button class="header__login button" type="button">
+                    <img class="header__button-icon" src="images/bird2.jpg" alt="Войти" width="55" height="55">
+                    <span class="header__button-text">Войти</span>
+                </button>
+                <button class="header__reg button" type="button">
+                    <img class="header__button-icon" src="images/notbird.jpg" alt="Регистрация" width="55" height="55">
+                    <span class="header__button-text">Регистрация</span>
+                </button>
+            </div>
+        </header>
+        <!--/ Заголовок -->
+
+        <!-- Основной контент -->
+        <main class="container">
+            <!-- Первый экран -->
+
+            <section class="section about">
+                <div class="about__wrap-right">
+                    <h2 class="about__title">О проекте</h2>
+                    <p class="about__text">Галерея КАРртин с воронами произвела приятное впечатление: интересная подборка
+                        работ, необычная атмосфера и глубокая символика в каждом полотне. Отличное место для любителей
+                        необычного искусства и загадочных сюжетов</p>
+                </div>
+                <div class="about__wrap-left">
+                    <img class="about__image" src="images/voron.jpg" alt="Современная картина вороны" width="400"
+                        height="300">
+                </div>
+            </section>       
+            <section class="images">
+                <h2 class="images__title">Известные КАРртины</h2>
+                    <ul class="images__list">
+                    <!-- <li class="images__item">
+                        <img class="image__pictures" src="images/silencevoron.jpg" alt="«Отражение» Автор: Ирина Чернова" class="pictures__img">
+                        <h3 class="pictures__subtitle">«Отражение» </h3>
+                        <p class="pictures__author">Автор:  Ирина Чернова</p>
+                        <button class="pictures__link" type="button">Подробнее</button>
+                    </li>
+                    <li class="pictures__item">
+                        <img class="pictures__image" src="images/alonevoron.jpg" alt=" «Тень на рассвете» Автор: Алексей Кустов" class="pictures__img">
+                        <h3 class="pictures__subtitle">«Тень на рассвете» </h3>
+                        <p class="pictures__author">Автор: Алексей Кустов</p>
+                        <button class="pictures__link" type="button">Подробнее</button>
+                    </li>
+                    <li class="pictures__item">
+                        <img class="pictures__image" src="images/shadowvoron.jpg" alt="«Одиночество» Автор: А. Г. Ручейков»" class="pictures__img">
+                        <h3 class="pictures__subtitle">«Одиночество»</h3>
+                        <p class="pictures__author">Автор: А. Г. Ручейков</p>
+                        <button class="pictures__link" type="button">Подробнее</button>
+                    </li>
+                    <li class="pictures__item">
+                        <img class="pictures__image" src="images/cosmosvoron.jpg" alt="«Ворон в пустоте» Автор: О. П. Гербариев»" class="pictures__img">
+                        <h3 class="pictures__subtitle">«Ворон в пустоте» </h3>
+                        <p class="pictures__author">Автор: О. П. Гербариев</p>
+                        <button class="pictures__link" type="button">Подробнее</button>
+                    </li>
+                    <li class="pictures__item">
+                        <img class="pictures__image" src="images/sunmoonvoron.jpg" alt="«Лунная соната» Автор: Анатолий Воронов»" class="pictures__img">
+                        <h3 class="pictures__subtitle">«Лунная соната» </h3>
+                        <p class="pictures__author">Автор: Анатолий Воронов</p>
+                        <button class="pictures__link" type="button">Подробнее</button>
+                    </li>
+                    <li class="pictures__item">
+                        <img class="pictures__image" src="images/run.jpg" alt="«Побег» Автор: Наталия Сорокина»" class="pictures__img">
+                        <h3 class="pictures__subtitle">«Побег» </h3>
+                        <p class="pictures__author">Автор: Наталия Сорокина</p>
+                        <button class="pictures__link" type="button">Подробнее</button>
+                    </li>   -->
+                </ul> 
+                <div class="pictures__button">
+                    <button class="pictures__left">
+                        <img class="pictures__image-button" src="images/voronleft.png" alt="влево" class="pictures__left-swiper">
+                    </button>
+                    <button class="pictures__right">
+                        <img class="pictures__image-button" src="images/voronright.png" alt="вправо" class="pictures__right-swiper">
+                    </button>
+                </div>
+             </section>
+            <section class="section promo">
+                <div class="promo__content">
+                    <h2 class="promo__title section__title">Выставки КАРллекций</h2>
+                </div>
+                <ul class="promo__list">
+                    <li class="promo__item">
+                        <div class="promo__wrapper">
+                            <h3 class="promo__title">«Врановые»: от мифов к реальности</h3>
+                            <p class="promo__description"> Эта выставка раскрывает многогранные образы ворон и их
+                                сородичей в искусстве, мифологии и науке. Посетители узнают, как вороны стали символами
+                                мудрости, хитрости и даже проводниками в потусторонний мир. Экспозиция включает
+                                живопись, скульптуру и редкие экземпляры птиц, в том числе альбиносов и меланистов.
+                                Особое внимание уделяется интеллекту и изобретательности этих птиц, а также их роли в
+                                культуре разных народов
+                            </p>
+                        </div>
+
+                        <img class="promo__icon" src="images/voron1.jpg" alt="«Врановые»: от мифов к реальности"
+                            width="400" height="200">
+
+                    </li>
+                    <li class="promo__item">
+                        <img class="promo__icon" src="images/voron2.jpg" alt="Юконский ворон: праздник через объектив "
+                            width="400" height="200">
+                        <div class="promo__wrapper">
+                            <h3 class="promo__title">Юконский ворон: праздник через объектив </h3>
+                            <p class="promo__description">Фотовыставка, посвящённая историко-культурному фестивалю
+                                «Юконский ворон».
+                                Экспозиция позволяет увидеть ворона не только как символ искусства, но и как часть живой
+                                традиции, объединяющей людей и вдохновляющей на творчество</p>
+                        </div>
+                    </li>
+                    <li class="promo__item">
+                        <div class="promo__wrapper">
+                            <h3 class="promo__title"> Графика и символизм: серия «Вороны»</h3>
+                            <p class="promo__description">Графичность и лаконичность линий подчёркивают мистическую
+                                атмосферу, а динамичные взмахи крыльев создают ощущение энергии и тревоги,
+                                ассоциирующейся с символикой смерти и страха.</p>
+                        </div>
+                        <img class="promo__icon" src="images/voron3.jpg" alt="Графика и символизм: серия «Вороны»"
+                            width="400" height="200">
+
+                    </li>
+                    <li class="promo__item">
+                        <img class="promo__icon" src="images/voron4.jpg" alt="Ворон в русской живописи" width="400"
+                            height="200">
+                        <div class="promo__wrapper">
+                            <h3 class="promo__title">Ворон в русской живописи</h3>
+                            <p class="promo__description">Экспозиция объединяет произведения русских художников XIX–XX
+                                веков, в которых вороны выступают как символы тоски, грусти и надежды.</p>
+                        </div>
+
+                    </li>
+                </ul>
+            </section>
+            <section class="reviews">
+                <h2 class="reviews__title section__title">
+                    КАРментарии
+                </h2>
+                <ul class="reviews__list">
+                    <li class="reviews__item">
+                        <img class="reviews__icon" src="images/breinvoron.jpg" alt="avatar" width="200" height="200">
+                        <h3 class="reviews__subtitle">Заголовок1</h3>
+                        <div class="reviews__score">
+                            <span class="reviews__score-item reviews__score-item--five"></span>
+                            <span class="reviews__score-item  reviews__score-mask"></span>
+                        </div>
+                        <p class="reviews__text">«Выставка воронов в этой галерее - настоящее открытие! Картины
+                            наполнены загадочной атмосферой и глубоким смыслом. Особенно впечатлили работы с
+                            контрастными цветами и динамичными образ историю, заставляет задуматься. Рекомендую
+                            всемлюбителям мистики и символизма!»</p>
+
+                    </li>
+                    <li class="reviews__item">
+                        <img class="reviews__icon" src="images/picturevoron.jpg" alt="avatar" width="200" height="200">
+                        <h3 class="reviews__subtitle">Заголовок2</h3>
+                        <div class="reviews__score">
+                            <span class="reviews__score-item reviews__score-item--five">
+                            </span>
+                            <span class="reviews__score-item  reviews__score-mask"></span>
+
+                        </div>
+                        <p class="reviews__text">Очень необычная и атмосферная выставка. Вороны на полотнах выглядят
+                            живыми, порой даже немного пугающими, но в этом и заключается их притягательность. Мне
+                            понравилась игра света и тени, а также эмоциональная насыщенность картин. Галерея создала
+                            прекрасное настроение, хочется вернуться сюда снова</p>
+                    </li>
+                    <li class="reviews__item">
+                        <img class="reviews__icon" src="images/angryvoron.jpg" alt="avatar" width="250" height="250">
+                        <h3 class="reviews__subtitle">Заголовок3</h3>
+                        <div class="reviews__score">
+                            <span class="reviews__score-item reviews__score-item">
+                            </span>
+                            <span class="reviews__score-item  reviews__score-mask"></span>
+
+                        </div>
+                        <p class="reviews__text">К сожалению, выставка картин с воронами оставила у меня разочарование.
+                            Многие работы показались слишком мрачными и однообразными, создавая удручающее настроение
+                            без глубины и смысла. Ощущение, что художники просто повторяют одни и те же мотивы, не
+                            предлагая ничего нового или интересного.</p>
+                    </li>
+                </ul>
+            </section>
+            <section class="swipper__section">
+                <div class="swiper-container mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="images/s1.jpg" alt="1 slide" class="swiper-wrapper-image" >
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/s3.jpg" alt="2 slide" class="swiper-wrapper-image">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/s4.png" alt="3 slide" class="swiper-wrapper-image">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/s5.jpg" alt="4 slide" class="swiper-wrapper-image">
+                      </div>
+                    </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </section>
+            <!--/ Первый экран -->
+        </main>
+        <footer class="footer__container">
+            <img class="footer__icon" src="images/footervoron.jpg" alt="Куда смотришь" width="400" height="200">
+            <div class="Footer__wrapper">
+                <p class="footer__copy">Сайт создан Бакшаевой Полиной, Казанцевой Ксенией, Мишиной Елизаветой, Саляховой
+                    Залидой группа ИТ-21, при поддержке ООО"БЕЛАЯ ВОРОНА"
+                </p>
+                <ul class="footer__list">
+                    <li class="footer__item"><a class="footer__item-link" href="#">Адрес:Г.Москва ул.Красноармейская д.65 </a></li>
+                    <li class="footer__item"><a class="footer__item-link" href="#">Телефоны:8(495)648-66-46,8(800)775-48-96</a></li>
+                    <li class="footer__item"><a class="footer__item-link" href="#">Электронная почта:da1203240@mail.ru</a></li>
+            </div>
+            </ul>
+        </footer>
+
+        </div>
+        <div class="window" hidden>
+            <section class="section popup popup__login">
+                <button class="popup__end" type="button">Х</button>
+                <form class="popup__form" action="/">
+                    <h3 class="popup__title">Вход в личный кабинет</h3>
+                    <input class="popup__field" type="tel" name="phone" placeholder="Номер телефона" required>
+                    <input class="popup__field" type="password" name="password" placeholder="Пароль" required>
+                    <button class="button">Войти</button>
+                </form>
+            </section>
+        </div>
+        <div class="dialog" hidden>
+            <section class="section popup popup__reg">
+                <button class="popup__close" type="button">Х</button>
+                <form class="popup__form" action="/">
+                    <h3 class="popup__title">Регистрация </h3>
+                    <input class="popup__field" type="name" name="data" placeholder="Логин" required>
+                    <input class="popup__field" type="adress" name="mail" placeholder="Адрес Эл.Почты" required>
+                    <input class="popup__field" type="password" name="password" placeholder="Пароль" required>
+                    <button class="button">Регистрация</button>
+                </form>
+            </section>
+        </div>
+    </div>
+    <script src="scripts/script.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+[
+    {
+        "imageUrl":[
+            "images/silencevoron.jpg",
+            "images/alonevoron.jpg"
+        ],
+        "ImageAlt": "Первая",
+        "ImageWidht": 500, 
+        "Subtitle": "«Отражение»", 
+        "Author": "Ирина Чернова"
+    },
+    {
+        "imageUrl":[
+            "images/shadowvoron.jpg",
+            "images/cosmosvoron.jpg"
+        ],
+        "ImageAlt": "Второе",
+        "ImageWidht": 500, 
+        "Subtitle": "«Тень на рассвете»", 
+        "Author": "Алексей Кустов"
+    },
+    {
+        "imageUrl":[
+            "images/sunmoonvoron.jpg",
+            "images/run.jpg"
+        ],
+        "ImageAlt": "Третье",
+        "ImageWidht": 500,
+        "Subtitle": "«Одиночество»", 
+        "Author": "А. Г. Ручейков" 
+    }
+]
